@@ -19,7 +19,7 @@ ActiveRecord::Schema.define(version: 20131116201814) do
   create_table "pics", force: true do |t|
     t.string   "emotion"
     t.text     "learned"
-    t.integer  "lessson"
+    t.integer  "lesson"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

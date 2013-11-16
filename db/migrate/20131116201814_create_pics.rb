@@ -3,7 +3,7 @@ class CreatePics < ActiveRecord::Migration
     create_table :pics do |t|
       t.string  :emotion
       t.text    :learned
-      t.integer :lessson
+      t.integer :lesson
       
       t.timestamps
     end
