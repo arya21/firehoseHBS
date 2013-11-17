@@ -2,7 +2,15 @@ class PicsController < ApplicationController
 
 	def index
 
+		if params[:emotion].present?
+		#filter by emotion
+		@pics = Pic.where(:emotion => params[:emotion])
+
+		else
+		
 		@pics = Pic.all
+
+		end
 
 	end
 
@@ -16,6 +24,14 @@ class PicsController < ApplicationController
 
 		@pic=Pic.create( pic_params )
 		redirect_to pics_path
+
+		#Validation code
+
+#		if @pic.persisted?
+#			redirect_to pics_path
+#		else
+#			render :new, :status => :unprocessable_entity
+#		end
 
 	end
 
