@@ -24,6 +24,12 @@ body {
 
 }
 
+
+body.pics-new {
+
+	background: pink 
+}
+
 .h1-custom {
 
 	font-family: Helvetica Neue Light,Helvetica Neue,Helvetica,san-serif;
